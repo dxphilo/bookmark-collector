@@ -1,0 +1,22 @@
+{
+    "name": "Bookmark Collector",
+    "version": "1.0",
+    "author":"John philip",
+    "description":"This project started as a way sharing interesting links discovered on the internet, with the intention of benefiting others. It operates anonymously and does not collect any user information for tracking purposes. Only the link you opt to share will be shared. However, exercise caution when using it for private applications.",
+    "permissions": ["activeTab","contextMenus","notifications","storage"],
+    "icons": {
+        "48": "icons/icon.png"
+    },
+    "action": {
+        "default_icon": "icons/icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+      ],
+    "manifest_version": 3
+  }
+  
